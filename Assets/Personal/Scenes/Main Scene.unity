@@ -423,6 +423,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1000000001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000000002}
+  - component: {fileID: 1000000003}
+  m_Layer: 0
+  m_Name: Slope Smart Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1000000002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000000001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d2e5f49da05c71be83f4a516c7d8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSkierPrefab: {fileID: 114266, guid: 771bbda8344550e4b9fa56b649e228f8, type: 3}
+  npcSkierPrefab: {fileID: 129184, guid: 297cb80c39bd7ae4daf80ac8b8c0a305, type: 3}
+  treePrefab: {fileID: 135938, guid: 63faeb71197289c4aa49564bf348118e, type: 3}
+  rockPrefab: {fileID: 171048, guid: 57516b916e7b90546a192c034bfd0b2a, type: 3}
+  fenceAPrefab: {fileID: 165632, guid: dbc20bb5be6e91a41a600b30763b376a, type: 3}
+  fenceBPrefab: {fileID: 176804, guid: de24c2b83a6bdfe4f8bde04dbd26c18f, type: 3}
+  snowMaterial: {fileID: 2100000, guid: b128bb24f46249b4fa06b69691970db3, type: 2}
+  iconHelmet: {fileID: 21300000, guid: 16f1d87e70285c7e69f262a37dc45d51, type: 3}
+  iconGoggles: {fileID: 21300000, guid: 30dab29e77872af18a749b87e04f2415, type: 3}
+  iconGloves: {fileID: 21300000, guid: 1e99460c6e78042fba81fbf9fd6946d0, type: 3}
+  iconSnowPants: {fileID: 21300000, guid: b1f2c2a93e352315c88976a5324db65e, type: 3}
+  iconBoots: {fileID: 21300000, guid: 9c2d6ef0b18c6548693ac88079c6d29f, type: 3}
+  iconJacket: {fileID: 21300000, guid: 07a20dbdd27a83cdc9e8b06e6453ec64, type: 3}
+  iconKnitMittens: {fileID: 21300000, guid: 563c0bac2c8d66f868f9e36a4e2d677f, type: 3}
+  iconScarf: {fileID: 21300000, guid: 48c819bbcf3f882048c9a1051d58ab11, type: 3}
+  iconSkiSocks: {fileID: 21300000, guid: eced8762eeeda2363b29257e5c713022, type: 3}
+  iconSunglasses: {fileID: 21300000, guid: 5e33d62c8e85587f1a983348d9b14beb, type: 3}
+  iconWoolHat: {fileID: 21300000, guid: 5b5ede518fdb278c6995610daf8d06ec, type: 3}
+  popClip: {fileID: 8300000, guid: 95c322c2356efc67b8e9b3fd18d70a2e, type: 3}
+  slopeHalfWidth: 6
+  slopeLength: 520
+  viewAhead: 125
+  minSpeed: 2.5
+  maxSpeed: 12.5
+  acceleration: 3
+  brakeDeceleration: 9
+  slowZoneLimit: 5.5
+  maxLateralSpeed: 7.5
+  skierScale: 1.3
+  treeScaleMin: 1.5
+  treeScaleMax: 2.7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -430,3 +505,4 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 1000000002}
